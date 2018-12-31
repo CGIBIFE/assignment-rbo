@@ -1,0 +1,4 @@
+<div>
+  <p class="errorMessage" *ngIf="errorMessage">Please upload csv file!</p>
+  <input type="file" (change)="onFileUpload($event)">
+</div>

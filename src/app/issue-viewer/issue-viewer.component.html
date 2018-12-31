@@ -1,0 +1,20 @@
+<table>
+  <thead>
+  <tr>
+    <th *ngFor="let item of head">
+      {{item}}
+      <span *ngIf="item === 'Issue count'" class="sortFilter">
+        <button [title]="'low to high'" (click)="onFilterChange('lowToHigh')"><</button>
+        <button [title]="'high to low'" (click)="onFilterChange('highToLow')">></button>
+      </span>
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let bodyItem of body">
+    <td *ngFor="let key of head">
+      {{key.trim() !== 'Date of birth' ? bodyItem[key] : bodyItem[key] | date: 'dd-MM-yyyy' }}
+    </td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+<div class="app">
+  <div class="container">
+    <h1>Welcome to Issue Manage</h1>
+    <p>Upload issue log file to manage log!</p>
+    <ng-container *ngIf="!showIssueManager">
+      <app-file-uploader></app-file-uploader>
+    </ng-container>
+    <ng-container *ngIf="showIssueManager">
+      <a href="#" (click)="requestNewUpload()">Upload different log!</a>
+      <app-issue-filter></app-issue-filter>
+      <app-issue-viewer [issues]="issueList"></app-issue-viewer>
+    </ng-container>
+  </div>
+</div>
+
+

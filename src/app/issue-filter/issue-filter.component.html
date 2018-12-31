@@ -1,0 +1,12 @@
+<div class="filter-wrapper">
+  <span>Filter data based on issue count:</span>
+  <span>
+    <select (change)="onFilterChange($event)">
+      <option value="-">Filter options</option>
+      <option value="lessThan">Count less than</option>
+      <option value="greaterThan">Count greater than</option>
+    </select>
+    <input type="number" placeholder="0" [(ngModel)]="count" />
+    <button (click)="filterIssues()">Filter</button>
+  </span>
+</div>
