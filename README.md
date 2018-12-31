@@ -16,11 +16,11 @@ This project's main goal is to show issues from log file uploaded via input fiel
   + if you would like to see the coverage or more details about unit test run _**ng test --code-coverage=true**_  
   
  **Technical details:**    
-    + Framework : **Angular@6**  
-    + Templating : **HTML**   
-    + Style compiler : **SASS**  
-    + state management : **ngxs**   
-    + unit test : **Karma, Jasmine**
+   + Framework : **Angular@6**  
+   + Templating : **HTML**   
+   + Style compiler : **SASS**  
+   + state management : **ngxs**   
+   + unit test : **Karma, Jasmine**
     
    **Application key features:**   
    Since key focus of the application is to handel issue log, 
