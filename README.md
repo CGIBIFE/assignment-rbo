@@ -1,6 +1,6 @@
 # IssueManager
 
-This project for showing issues and filtering them based on least number of issues from a log file that is uploaded. 
+This project's main goal is to show issues from log file uploaded via input field, along with facility to filter data based on least number of issues.
 
  **How to run this application:**
  + open terminal and run _**npm install**_   
